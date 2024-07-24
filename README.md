@@ -5,3 +5,7 @@
 - 免费使用教程 [请查看](https://1zimu.com/docs/quickbegin/simpleintro) 。
 
 以下为图片、视频介绍：
+
+
+https://github.com/user-attachments/assets/23ac8428-c944-4d3b-aa76-8116a96a4d71
+
