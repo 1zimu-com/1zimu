@@ -5,6 +5,12 @@
 - 免费使用教程 [请查看](https://1zimu.com/docs/quickbegin/simpleintro) 。
 - 功能试用 [请查看](https://1zimu.com/docs/quickbegin/install#%E5%8A%9F%E8%83%BD%E8%AF%95%E7%94%A8)。
 
-以下为图片、视频介绍：
+#### 已上架的扩展应用商店：
+
+- Chrome 应用商店：https://chromewebstore.google.com/detail/fjbegfkmkcjknjkkcebnejcpdchpadpc
+- Edge 扩展应用商店：https://microsoftedge.microsoft.com/addons/detail/okjfkjmfkhemeenfiphhljeanmghofjm
+- Firefox add-ons 应用商店：https://addons.mozilla.org/zh-CN/firefox/addon/1zimu/
+
+以下为视频介绍：
 
 https://github.com/user-attachments/assets/23ac8428-c944-4d3b-aa76-8116a96a4d71
