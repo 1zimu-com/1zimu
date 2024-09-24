@@ -8,23 +8,23 @@
 
 #### 跳转播放
 
-![chromeStore1](https://github.com/user-attachments/assets/2efc3690-fb62-4a91-8cbb-ba95b30ee388)
+![chromeStore1](https://github.com/user-attachments/assets/590e21ad-d8e7-49d9-90c2-8003cc0ab4a8)
 
 #### 生词，短语，整句翻译
 
-![chromeStore2](https://github.com/user-attachments/assets/7f018a4e-b3dd-4f40-a1b1-22f12528b220)
+![chromeStore2](https://github.com/user-attachments/assets/b93d6234-a76b-4940-b451-886a3f5aade4)
 
 #### 画面遮罩
 
-![chromeStore3](https://github.com/user-attachments/assets/e30809e7-744d-470b-8c25-76c62e4934bd)
+![chromeStore3](https://github.com/user-attachments/assets/b76dccf6-12c6-47f1-97bb-28e1aa238981)
 
 #### 多平台
 
-![chromeStore4](https://github.com/user-attachments/assets/5f570442-5356-4ac9-8d69-701b353a3f88)
+![chromeStore4](https://github.com/user-attachments/assets/2fa9f1b6-02f6-4d34-ab61-f78435b124cc)
 
 #### 变速播放，跟读
 
-![chromeStore5](https://github.com/user-attachments/assets/5880c833-2f8c-4c85-9865-6c5831ee5a2d)
+![chromeStore5](https://github.com/user-attachments/assets/62d0852f-175f-4107-85b3-66ec8f4da1a8)
 
 以下为视频介绍：
 
