@@ -1,0 +1,70 @@
+{
+  "onlyOneLanguageTranslateOrNot": {
+    "message": "此视频只提供单语言字幕，是否使用1zimu翻译此字幕数据？",
+    "description": "此视频只提供单语言字幕，是否使用1zimu翻译此字幕数据？"
+  },
+  "onlyOneLanguageYouCanTranslate": {
+    "message": "此视频资源只有单语言字幕，可以使用一字幕翻译此字幕数据为指定语种",
+    "description": "此视频资源只有单语言字幕，可以使用一字幕翻译此字幕数据为指定语种"
+  },
+  "filter": {
+    "message": "过滤",
+    "description": "过滤"
+  },
+  "translate": {
+    "message": "翻译",
+    "description": "翻译"
+  },
+  "pleaseChooseOrSearchTargetLanguage": {
+    "message": "请选择或搜索要翻译的目标语言",
+    "description": "请选择或搜索要翻译的目标语言"
+  },
+  "pleaseChooseTargetLanguageThenTranslate": {
+    "message": "请先选择目标语言，再翻译！",
+    "description": "请先选择目标语言，再翻译！"
+  },
+  "translateDataIsNotPairedContactAdministrator": {
+    "message": "翻译数据不匹配，请联系管理员！",
+    "description": "翻译数据不匹配，请联系管理员！"
+  },
+  "textFilterWordBilingualSupport": {
+    "message": "请输入要过滤的字幕，支持双语",
+    "description": "请输入要过滤的字幕，支持双语"
+  },
+  "translateTheText": {
+    "message": "翻译该文本",
+    "description": "翻译该文本"
+  },
+  "closeFloatBall": {
+    "message": "关闭悬浮球",
+    "description": "关闭悬浮球"
+  },
+  "itCanOpenAgainInSettingPage": {
+    "message": "悬浮球关闭后可以在扩展的设置页面中再次打开。",
+    "description": "悬浮球关闭后可以在扩展的设置页面中再次打开。"
+  },
+  "closeConfirm": {
+    "message": "确认关闭",
+    "description": "确认关闭"
+  },
+  "thereIsNoSubtitleInThisVideo": {
+    "message": "此视频资源未提供字幕数据",
+    "description": "此视频资源未提供字幕数据"
+  },
+  "subtitleTurnOn": {
+    "message": "字幕开启",
+    "description": "字幕开启"
+  },
+  "subtitleTurnOff": {
+    "message": "字幕关闭",
+    "description": "字幕关闭"
+  },
+  "dualSubtitles": {
+    "message": "双语字幕",
+    "description": "双语字幕"
+  },
+  "originalSubtitles": {
+    "message": "原字幕",
+    "description": "原字幕"
+  }
+}
