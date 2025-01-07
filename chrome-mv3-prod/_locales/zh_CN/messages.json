@@ -47,6 +47,10 @@
     "message": "确认关闭",
     "description": "确认关闭"
   },
+  "canTurnItOffInSetting": {
+    "message": "可在\"设置->字幕列表\"开关中关闭此区域",
+    "description": "可在\"设置->字幕列表\"开关中关闭此区域"
+  },
   "thereIsNoSubtitleInThisVideo": {
     "message": "此视频资源未提供字幕数据",
     "description": "此视频资源未提供字幕数据"
