@@ -8,10 +8,10 @@
   },
   "manifest_version": 3,
   "action": {
-    "default_title": "一字幕 | 点击弹出菜单！",
+    "default_title": "一字幕 1zimu.com - 视频字幕插件 | 电影字幕 ",
     "default_popup": "popup.html"
   },
-  "version": "0.3.44",
+  "version": "0.3.45",
   "author": "supercrc <service@1zimu.com>",
   "name": "一字幕 - 视频字幕插件 | 电影字幕 | 免费",
   "description": "一款免费的支持双语的音频、视频字幕的辅助插件。可按单词，短语，整句翻译；支持(YouTube，Bilibili 等视频平台)；亦可支持本地外挂字幕和内嵌字幕。可变速、重复播放、跟读、画面遮挡。",
@@ -32,29 +32,6 @@
     "cookies"
   ],
   "content_scripts": [
-    {
-      "matches": [
-        "*://www.1zimu.com/player*",
-        "*://1zimu.com/player*",
-        "*://frp.1zimu.com/*",
-        "*://localhost/*"
-      ],
-      "js": [
-        "NextjsGetLocalSrt.54b852fe.js"
-      ],
-      "run_at": "document_start",
-      "css": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "TextSelectionEvent.897c2b11.js"
-      ],
-      "run_at": "document_start",
-      "css": []
-    },
     {
       "matches": [
         "*://www.aliyundrive.com/drive/file*"
@@ -101,6 +78,19 @@
     },
     {
       "matches": [
+        "*://www.1zimu.com/player*",
+        "*://1zimu.com/player*",
+        "*://frp.1zimu.com/*",
+        "*://localhost/*"
+      ],
+      "js": [
+        "NextjsGetLocalSrt.54b852fe.js"
+      ],
+      "run_at": "document_start",
+      "css": []
+    },
+    {
+      "matches": [
         "*://www.1zimu.com/*",
         "*://1zimu.com/*",
         "*://open.1zimu.com/player*",
@@ -124,6 +114,16 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "TextSelectionEvent.897c2b11.js"
+      ],
+      "run_at": "document_start",
+      "css": []
+    },
+    {
+      "matches": [
         "*://*.youtube.com/watch*",
         "*://youtube.com/watch*",
         "*://*.youtube.com/*",
@@ -133,27 +133,6 @@
         "youtubeSub.e2cce0d8.js"
       ],
       "run_at": "document_start",
-      "css": []
-    },
-    {
-      "matches": [
-        "*://www.aliyundrive.com/drive/file*"
-      ],
-      "js": [
-        "AliyundriveSubtitleList.ff6c7902.js"
-      ],
-      "run_at": "document_start",
-      "css": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*"
-      ],
-      "js": [
-        "DraggableSubtitleList.cae5c78c.js"
-      ],
-      "run_at": "document_end",
       "css": []
     },
     {
@@ -169,10 +148,32 @@
     },
     {
       "matches": [
+        "*://www.aliyundrive.com/drive/file*"
+      ],
+      "js": [
+        "AliyundriveSubtitleList.ff6c7902.js"
+      ],
+      "run_at": "document_start",
+      "css": []
+    },
+    {
+      "matches": [
         "<all_urls>"
       ],
       "js": [
         "InlineSubtitleMask.c008b216.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "css": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*"
+      ],
+      "js": [
+        "DraggableSubtitleList.cae5c78c.js"
       ],
       "run_at": "document_end",
       "css": []
@@ -185,17 +186,6 @@
         "DraggableDict.54b1869f.js"
       ],
       "run_at": "document_end",
-      "css": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "TextSelectionPopup.67a37996.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false,
       "css": []
     },
     {
@@ -218,10 +208,32 @@
         "<all_urls>"
       ],
       "js": [
+        "TextSelectionPopup.67a37996.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
         "ToastContainerContent.6b5f22af.js"
       ],
       "run_at": "document_end",
       "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "subtitle.5b4dee95.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
       "css": []
     },
     {
@@ -235,17 +247,6 @@
         "YoutubeSubtitleList.8f74b19e.js"
       ],
       "run_at": "document_end",
-      "css": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "subtitle.5b4dee95.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": true,
       "css": []
     },
     {
@@ -292,6 +293,13 @@
     },
     {
       "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
         "*://www.aliyundrive.com/*"
       ],
       "resources": [
@@ -301,6 +309,12 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*"
       ],
@@ -308,25 +322,6 @@
         "injectBilibili.b2565a8c.js",
         "injectYoutube.bf899eef.js"
       ]
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
     },
     {
       "matches": [
@@ -356,6 +351,18 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
         "*://*.youtube.com/*",
         "*://youtube.com/*",
         "*://*.youtube.com/*",
@@ -365,12 +372,6 @@
         "injectBilibili.b2565a8c.js",
         "injectYoutube.bf899eef.js"
       ]
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
     },
     {
       "matches": [
