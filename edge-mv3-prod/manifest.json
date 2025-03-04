@@ -11,7 +11,7 @@
     "default_title": "一字幕 1zimu.com - 视频字幕插件 | 电影字幕 ",
     "default_popup": "popup.html"
   },
-  "version": "0.3.45",
+  "version": "0.3.46",
   "author": "supercrc <service@1zimu.com>",
   "name": "一字幕 - 视频字幕插件 | 电影字幕 | 免费",
   "description": "一款免费的支持双语的音频、视频字幕的辅助插件。可按单词，短语，整句翻译；支持(YouTube，Bilibili 等视频平台)；亦可支持本地外挂字幕和内嵌字幕。可变速、重复播放、跟读、画面遮挡。",
@@ -148,6 +148,16 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "DraggableDict.54b1869f.js"
+      ],
+      "run_at": "document_end",
+      "css": []
+    },
+    {
+      "matches": [
         "*://www.aliyundrive.com/drive/file*"
       ],
       "js": [
@@ -158,32 +168,11 @@
     },
     {
       "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "InlineSubtitleMask.c008b216.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": true,
-      "css": []
-    },
-    {
-      "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*"
       ],
       "js": [
         "DraggableSubtitleList.cae5c78c.js"
-      ],
-      "run_at": "document_end",
-      "css": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "DraggableDict.54b1869f.js"
       ],
       "run_at": "document_end",
       "css": []
@@ -208,21 +197,10 @@
         "<all_urls>"
       ],
       "js": [
-        "TextSelectionPopup.67a37996.js"
+        "InlineSubtitleMask.c008b216.js"
       ],
       "run_at": "document_end",
-      "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "ToastContainerContent.6b5f22af.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false,
+      "all_frames": true,
       "css": []
     },
     {
@@ -234,6 +212,30 @@
       ],
       "run_at": "document_end",
       "all_frames": true,
+      "css": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "TextSelectionPopup.67a37996.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
+        "*://*.youtube.com/watch*",
+        "*://youtube.com/watch*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "js": [
+        "YoutubeSubtitleSwitch.79c61bb7.js"
+      ],
+      "run_at": "document_start",
       "css": []
     },
     {
@@ -251,15 +253,13 @@
     },
     {
       "matches": [
-        "*://*.youtube.com/watch*",
-        "*://youtube.com/watch*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
+        "<all_urls>"
       ],
       "js": [
-        "YoutubeSubtitleSwitch.79c61bb7.js"
+        "ToastContainerContent.6b5f22af.js"
       ],
-      "run_at": "document_start",
+      "run_at": "document_end",
+      "all_frames": false,
       "css": []
     }
   ],
@@ -300,18 +300,18 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
         "*://www.aliyundrive.com/*"
       ],
       "resources": [
         "injectBilibili.b2565a8c.js",
         "injectYoutube.bf899eef.js"
       ]
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
     },
     {
       "matches": [
@@ -322,12 +322,6 @@
         "injectBilibili.b2565a8c.js",
         "injectYoutube.bf899eef.js"
       ]
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
     },
     {
       "matches": [
@@ -368,10 +362,7 @@
         "*://*.youtube.com/*",
         "*://youtube.com/*"
       ],
-      "resources": [
-        "injectBilibili.b2565a8c.js",
-        "injectYoutube.bf899eef.js"
-      ]
+      "resources": []
     },
     {
       "matches": [
@@ -379,6 +370,15 @@
         "*://youtube.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*"
+      ],
+      "resources": [
+        "injectBilibili.b2565a8c.js",
+        "injectYoutube.bf899eef.js"
+      ]
+    },
+    {
+      "matches": [
+        "<all_urls>"
       ],
       "resources": []
     }

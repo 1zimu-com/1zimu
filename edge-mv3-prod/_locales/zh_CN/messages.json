@@ -3,6 +3,18 @@
     "message": "此视频只提供单语言字幕，是否使用1zimu翻译此字幕数据？",
     "description": "此视频只提供单语言字幕，是否使用1zimu翻译此字幕数据？"
   },
+  "updateLogs": {
+    "message": "更新日志",
+    "description": "更新日志"
+  },
+  "switchLanguage": {
+    "message": "切换语言(可搜索)",
+    "description": "切换语言"
+  },
+  "translateSub": {
+    "message": "翻译当前字幕(可搜索)",
+    "description": "翻译当前字幕"
+  },
   "onlyOneLanguageYouCanTranslate": {
     "message": "此视频资源只有单语言字幕，可以使用一字幕翻译此字幕数据为指定语种",
     "description": "此视频资源只有单语言字幕，可以使用一字幕翻译此字幕数据为指定语种"
