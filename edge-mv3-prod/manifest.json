@@ -11,7 +11,7 @@
     "default_title": "一字幕 1zimu.com - 视频字幕插件 | 电影字幕 ",
     "default_popup": "popup.html"
   },
-  "version": "0.3.47",
+  "version": "0.3.48",
   "author": "supercrc <service@1zimu.com>",
   "name": "一字幕 - 视频字幕插件 | 电影字幕 | 免费",
   "description": "一款免费的支持双语的音频、视频字幕的辅助插件。可按单词，短语，整句翻译；支持(YouTube，Bilibili 等视频平台)；亦可支持本地外挂字幕和内嵌字幕。可变速、重复播放、跟读、画面遮挡。",
@@ -59,10 +59,9 @@
         "*://bilibili.com/video*"
       ],
       "js": [
-        "getBiliAISubtitle.d4d2405c.js"
+        "getBilibiliSubtitleRelay.e06d0c7a.js"
       ],
-      "run_at": "document_start",
-      "all_frames": false,
+      "run_at": "document_end",
       "css": []
     },
     {
@@ -71,9 +70,10 @@
         "*://bilibili.com/video*"
       ],
       "js": [
-        "getBilibiliSubtitleRelay.e06d0c7a.js"
+        "getBiliAISubtitle.d4d2405c.js"
       ],
-      "run_at": "document_end",
+      "run_at": "document_start",
+      "all_frames": false,
       "css": []
     },
     {
@@ -140,42 +140,9 @@
         "<all_urls>"
       ],
       "js": [
-        "InlineSubtitleMask.c008b216.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": true,
-      "css": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*"
-      ],
-      "js": [
-        "DraggableSubtitleList.cae5c78c.js"
-      ],
-      "run_at": "document_end",
-      "css": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
         "DraggableDict.54b1869f.js"
       ],
       "run_at": "document_end",
-      "css": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "subtitle.5b4dee95.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": true,
       "css": []
     },
     {
@@ -187,17 +154,6 @@
         "BilibiliSubtitleSwitch.fb3bb839.js"
       ],
       "run_at": "document_end",
-      "css": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "TextSelectionPopup.67a37996.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false,
       "css": []
     },
     {
@@ -220,7 +176,40 @@
         "<all_urls>"
       ],
       "js": [
-        "ToastContainerContent.6b5f22af.js"
+        "InlineSubtitleMask.c008b216.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "css": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*"
+      ],
+      "js": [
+        "DraggableSubtitleList.cae5c78c.js"
+      ],
+      "run_at": "document_end",
+      "css": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "subtitle.5b4dee95.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "css": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "TextSelectionPopup.67a37996.js"
       ],
       "run_at": "document_end",
       "all_frames": false,
@@ -237,6 +226,17 @@
         "YoutubeSubtitleSwitch.79c61bb7.js"
       ],
       "run_at": "document_start",
+      "css": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "ToastContainerContent.6b5f22af.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
       "css": []
     },
     {
@@ -292,34 +292,6 @@
         "*://*.bilibili.com/*",
         "*://bilibili.com/*"
       ],
-      "resources": [
-        "injectBilibili.b2565a8c.js",
-        "injectYoutube.bf899eef.js"
-      ]
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
       "resources": []
     },
     {
@@ -344,10 +316,38 @@
     },
     {
       "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*"
+      ],
+      "resources": [
+        "injectBilibili.b2565a8c.js",
+        "injectYoutube.bf899eef.js"
+      ]
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
         "*://*.youtube.com/*",
         "*://youtube.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
       ],
       "resources": []
     },
