@@ -11,7 +11,7 @@
     "default_title": "一字幕 1zimu.com - 视频字幕插件 | 电影字幕 ",
     "default_popup": "popup.html"
   },
-  "version": "0.3.48",
+  "version": "0.5.1",
   "author": "supercrc <service@1zimu.com>",
   "name": "一字幕 - 视频字幕插件 | 电影字幕 | 免费",
   "description": "一款免费的支持双语的音频、视频字幕的辅助插件。可按单词，短语，整句翻译；支持(YouTube，Bilibili 等视频平台)；亦可支持本地外挂字幕和内嵌字幕。可变速、重复播放、跟读、画面遮挡。",
@@ -34,20 +34,22 @@
   "content_scripts": [
     {
       "matches": [
-        "*://www.aliyundrive.com/drive/file*"
-      ],
-      "js": [
-        "aliyundriveSub.c4c7e43e.js"
-      ],
-      "run_at": "document_start",
-      "css": []
-    },
-    {
-      "matches": [
         "<all_urls>"
       ],
       "js": [
         "browserInfo.8b8a04c6.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/video*",
+        "*://bilibili.com/video*"
+      ],
+      "js": [
+        "getBiliAISubtitle.d4d2405c.js"
       ],
       "run_at": "document_start",
       "all_frames": false,
@@ -66,14 +68,15 @@
     },
     {
       "matches": [
-        "*://*.bilibili.com/video*",
-        "*://bilibili.com/video*"
+        "*://www.1zimu.com/*",
+        "*://1zimu.com/*",
+        "*://open.1zimu.com/player*",
+        "*://localhost/*"
       ],
       "js": [
-        "getBiliAISubtitle.d4d2405c.js"
+        "storeCookie.533d844f.js"
       ],
       "run_at": "document_start",
-      "all_frames": false,
       "css": []
     },
     {
@@ -85,19 +88,6 @@
       ],
       "js": [
         "NextjsGetLocalSrt.54b852fe.js"
-      ],
-      "run_at": "document_start",
-      "css": []
-    },
-    {
-      "matches": [
-        "*://www.1zimu.com/*",
-        "*://1zimu.com/*",
-        "*://open.1zimu.com/player*",
-        "*://localhost/*"
-      ],
-      "js": [
-        "storeCookie.533d844f.js"
       ],
       "run_at": "document_start",
       "css": []
@@ -148,27 +138,22 @@
     {
       "matches": [
         "*://*.bilibili.com/*",
-        "*://bilibili.com/*"
-      ],
-      "js": [
-        "BilibiliSubtitleSwitch.fb3bb839.js"
-      ],
-      "run_at": "document_end",
-      "css": []
-    },
-    {
-      "matches": [
+        "*://bilibili.com/*",
         "*://localhost/*",
         "*://frp.1zimu.com/*",
         "*://1zimu.com/*",
         "*://www.1zimu.com/*",
         "*://1zimu.com/player*",
-        "*://www.1zimu.com/player*"
+        "*://www.1zimu.com/player*",
+        "*://*.youtube.com/watch*",
+        "*://youtube.com/watch*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
       ],
       "js": [
-        "NextjsSubtitleList.23a49bd7.js"
+        "InlineSubtitleListMix.5009194c.js"
       ],
-      "run_at": "document_start",
+      "run_at": "document_end",
       "css": []
     },
     {
@@ -184,11 +169,25 @@
     },
     {
       "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*"
+        "<all_urls>"
       ],
       "js": [
-        "DraggableSubtitleList.cae5c78c.js"
+        "DraggableTTSSubtitleList.c116c850.js"
+      ],
+      "run_at": "document_end",
+      "css": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://*.youtube.com/watch*",
+        "*://youtube.com/watch*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "js": [
+        "InlineSubtitleSwitchMix.946d0f59.js"
       ],
       "run_at": "document_end",
       "css": []
@@ -217,19 +216,6 @@
     },
     {
       "matches": [
-        "*://*.youtube.com/watch*",
-        "*://youtube.com/watch*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "js": [
-        "YoutubeSubtitleSwitch.79c61bb7.js"
-      ],
-      "run_at": "document_start",
-      "css": []
-    },
-    {
-      "matches": [
         "<all_urls>"
       ],
       "js": [
@@ -237,19 +223,6 @@
       ],
       "run_at": "document_end",
       "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
-        "*://*.youtube.com/watch*",
-        "*://youtube.com/watch*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "js": [
-        "YoutubeSubtitleList.8f74b19e.js"
-      ],
-      "run_at": "document_end",
       "css": []
     }
   ],
@@ -290,18 +263,17 @@
     {
       "matches": [
         "*://*.bilibili.com/*",
-        "*://bilibili.com/*"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
+        "*://bilibili.com/*",
         "*://localhost/*",
         "*://frp.1zimu.com/*",
         "*://1zimu.com/*",
         "*://www.1zimu.com/*",
         "*://1zimu.com/*",
-        "*://www.1zimu.com/*"
+        "*://www.1zimu.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
       ],
       "resources": [
         "injectBilibili.b2565a8c.js",
@@ -313,31 +285,20 @@
         "<all_urls>"
       ],
       "resources": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "injectBilibili.b2565a8c.js",
+        "injectYoutube.bf899eef.js",
+      ]
     },
     {
       "matches": [
         "*://*.bilibili.com/*",
-        "*://bilibili.com/*"
-      ],
-      "resources": [
-        "injectBilibili.b2565a8c.js",
-        "injectYoutube.bf899eef.js"
-      ]
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
+        "*://bilibili.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*",
         "*://*.youtube.com/*",
@@ -353,15 +314,15 @@
     },
     {
       "matches": [
-        "*://*.youtube.com/*",
-        "*://youtube.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
+        "<all_urls>"
       ],
-      "resources": [
-        "injectBilibili.b2565a8c.js",
-        "injectYoutube.bf899eef.js"
-      ]
+      "resources": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
     }
   ]
 }
