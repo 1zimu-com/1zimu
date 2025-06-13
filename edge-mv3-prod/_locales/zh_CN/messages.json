@@ -11,8 +11,12 @@
     "message": "切换语言(可搜索)",
     "description": "切换语言"
   },
+  "switchShowMode": {
+    "message": "切换显示模式",
+    "description": "切换显示模式"
+  },
   "translateSub": {
-    "message": "翻译当前字幕(可搜索)",
+    "message": "翻译当前字幕(可搜索)，并保存选择至本地",
     "description": "翻译当前字幕"
   },
   "onlyOneLanguageYouCanTranslate": {
@@ -43,6 +47,10 @@
     "message": "请输入要过滤的字幕，支持双语",
     "description": "请输入要过滤的字幕，支持双语"
   },
+  "turnTextToAudio": {
+    "message": "将文本转换为音频(需使用微软Azure语音合成服务)",
+    "description": "将文本转换为音频(需使用微软Azure语音合成服务)"
+  },
   "translateTheText": {
     "message": "翻译该文本",
     "description": "翻译该文本"
@@ -66,6 +74,14 @@
   "thereIsNoSubtitleInThisVideo": {
     "message": "此视频资源未提供字幕数据",
     "description": "此视频资源未提供字幕数据"
+  },
+  "switchOn": {
+    "message": "开",
+    "description": "<Switch/>开启"
+  },
+  "switchOff": {
+    "message": "关",
+    "description": "<Switch/>关闭"
   },
   "subtitleTurnOn": {
     "message": "字幕开启",
