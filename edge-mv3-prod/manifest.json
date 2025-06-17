@@ -11,8 +11,8 @@
     "default_title": "一字幕 1zimu.com - 视频字幕插件 | 电影字幕 ",
     "default_popup": "popup.html"
   },
-  "version": "0.5.2",
-  "author": "supercrc <service@1zimu.com>",
+  "version": "0.5.4",
+  "author": "supercrc <cj@jeffc.cn>",
   "name": "一字幕 - 视频字幕插件 | 电影字幕 | 免费",
   "description": "一款免费的支持双语的音频、视频字幕的辅助插件。可按单词，短语，整句翻译；支持(YouTube，Bilibili 等视频平台)；亦可支持本地外挂字幕和内嵌字幕。可变速、重复播放、跟读、画面遮挡。",
   "background": {
@@ -33,17 +33,6 @@
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "TextSelectionEvent.897c2b11.js"
-      ],
-      "run_at": "document_start",
-      "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
         "*://www.1zimu.com/*",
         "*://1zimu.com/*",
         "*://open.1zimu.com/player*",
@@ -60,6 +49,17 @@
       ],
       "js": [
         "getBiliAISubtitle.d4d2405c.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "TextSelectionEvent.897c2b11.js"
       ],
       "run_at": "document_start",
       "all_frames": false,
@@ -102,22 +102,6 @@
       "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*",
-        "*://*.youtube.com/watch*",
-        "*://youtube.com/watch*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "js": [
-        "InlineSubtitleSwitchMix.946d0f59.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
         "*://localhost/*",
         "*://frp.1zimu.com/*",
         "*://1zimu.com/*",
@@ -131,6 +115,22 @@
       ],
       "js": [
         "subtitle.5b4dee95.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://*.youtube.com/watch*",
+        "*://youtube.com/watch*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "js": [
+        "InlineSubtitleSwitchMix.946d0f59.js"
       ],
       "run_at": "document_end",
       "all_frames": false,
@@ -195,6 +195,12 @@
       "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*",
+        "*://localhost/*",
+        "*://frp.1zimu.com/*",
+        "*://1zimu.com/*",
+        "*://www.1zimu.com/*",
+        "*://1zimu.com/*",
+        "*://www.1zimu.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*",
         "*://*.youtube.com/*",
@@ -206,12 +212,6 @@
       "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*",
-        "*://localhost/*",
-        "*://frp.1zimu.com/*",
-        "*://1zimu.com/*",
-        "*://www.1zimu.com/*",
-        "*://1zimu.com/*",
-        "*://www.1zimu.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*",
         "*://*.youtube.com/*",
