@@ -11,7 +11,7 @@
     "default_title": "一字幕 1zimu.com - 视频字幕插件 | 电影字幕 ",
     "default_popup": "popup.html"
   },
-  "version": "0.5.4",
+  "version": "0.5.5",
   "author": "supercrc <cj@jeffc.cn>",
   "name": "一字幕 - 视频字幕插件 | 电影字幕 | 免费",
   "description": "一款免费的支持双语的音频、视频字幕的辅助插件。可按单词，短语，整句翻译；支持(YouTube，Bilibili 等视频平台)；亦可支持本地外挂字幕和内嵌字幕。可变速、重复播放、跟读、画面遮挡。",
@@ -89,6 +89,22 @@
     },
     {
       "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://*.youtube.com/watch*",
+        "*://youtube.com/watch*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "js": [
+        "InlineSubtitleSwitchMix.946d0f59.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
         "<all_urls>"
       ],
       "js": [
@@ -115,22 +131,6 @@
       ],
       "js": [
         "subtitle.5b4dee95.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
-        "*://*.youtube.com/watch*",
-        "*://youtube.com/watch*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "js": [
-        "InlineSubtitleSwitchMix.946d0f59.js"
       ],
       "run_at": "document_end",
       "all_frames": false,
@@ -184,6 +184,17 @@
     },
     {
       "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
         "<all_urls>"
       ],
       "resources": [
@@ -201,17 +212,6 @@
         "*://www.1zimu.com/*",
         "*://1zimu.com/*",
         "*://www.1zimu.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*",
         "*://*.youtube.com/*",
