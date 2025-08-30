@@ -11,10 +11,10 @@
     "default_title": "一字幕 1zimu.com - 视频字幕插件 | 电影字幕 ",
     "default_popup": "popup.html"
   },
-  "version": "0.5.6",
-  "author": "supercrc <cj@jeffc.cn>",
+  "version": "0.5.7",
+  "author": "big cui <service@1zimu.com>",
   "name": "一字幕 - 音频、视频字幕插件 | 免费",
-  "description": "一款免费的支持多语种的双语的音频、视频字幕的语言学习辅助插件。可按单词，短语，整句翻译；支持(YouTube，Bilibili 等视频平台)；亦可支持本地外挂字幕和内嵌字幕。可变速、重复播放、跟读、画面遮挡。",
+  "description": "一款免费的支持多语种的双语的音频、视频字幕的语言学习辅助插件。可按单词，短语，整句翻译；支持(YouTube，bilibili(b站), 百度网盘 等平台)；亦可支持本地外挂字幕和内嵌字幕。可变速、重复播放、跟读、画面遮挡。",
   "background": {
     "service_worker": "static/background/index.js"
   },
@@ -63,22 +63,6 @@
         "TextSelectionEvent.897c2b11.js"
       ],
       "run_at": "document_start",
-      "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
-        "*://*.youtube.com/watch*",
-        "*://youtube.com/watch*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "js": [
-        "InlineSubtitleSwitchMix.946d0f59.js"
-      ],
-      "run_at": "document_end",
       "all_frames": false,
       "css": []
     },
@@ -138,6 +122,22 @@
       "run_at": "document_end",
       "all_frames": false,
       "css": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://*.youtube.com/watch*",
+        "*://youtube.com/watch*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "js": [
+        "InlineSubtitleSwitchMix.946d0f59.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "css": []
     }
   ],
   "default_locale": "zh_CN",
@@ -166,19 +166,9 @@
       ],
       "resources": [
         "injectBilibili.b2565a8c.js",
-        "injectYoutube.bf899eef.js"
+        "injectYoutube.bf899eef.js",
+        "injectBaiduPan.4dbf32eb.js"
       ]
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "resources": []
     },
     {
       "matches": [
@@ -186,7 +176,8 @@
       ],
       "resources": [
         "injectBilibili.b2565a8c.js",
-        "injectYoutube.bf899eef.js"
+        "injectYoutube.bf899eef.js",
+        "injectBaiduPan.4dbf32eb.js"
       ]
     },
     {
@@ -220,6 +211,17 @@
         "*://*.youtube.com/*",
         "*://youtube.com/*",
         "*://pan.baidu.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*"
       ],

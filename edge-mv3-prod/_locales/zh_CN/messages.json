@@ -12,8 +12,8 @@
     "description": "切换语言"
   },
   "switchShowMode": {
-    "message": "切换显示模式",
-    "description": "切换显示模式"
+    "message": "切换语种显示模式",
+    "description": "切换语种显示模式"
   },
   "translateSub": {
     "message": "翻译当前字幕(可搜索)，并保存选择至本地",
