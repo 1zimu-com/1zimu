@@ -20,11 +20,15 @@
 
 #### 多平台
 
-![chromeStore4](https://github.com/user-attachments/assets/2fa9f1b6-02f6-4d34-ab61-f78435b124cc)
+![chromeStore4](https://github.com/user-attachments/assets/7813f5fe-f7c2-4fe6-a239-977c36efe722)
 
 #### 变速播放，跟读
 
 ![chromeStore5](https://github.com/user-attachments/assets/62d0852f-175f-4107-85b3-66ec8f4da1a8)
+
+#### 支持TTS
+
+![chromeStore5_chrome_TTS](https://github.com/user-attachments/assets/e1d7b707-755b-41db-bece-6fa850279aa8)
 
 以下为视频介绍：
 
