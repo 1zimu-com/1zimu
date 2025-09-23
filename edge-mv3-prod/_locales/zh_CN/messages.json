@@ -98,5 +98,9 @@
   "originalSubtitles": {
     "message": "原字幕",
     "description": "原字幕"
+  },
+  "pleasePayItThenUse": {
+    "message": "请开通会员后使用此功能",
+    "description": "请开通会员后使用此功能"
   }
 }
