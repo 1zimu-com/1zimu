@@ -11,7 +11,7 @@
     "default_title": "一字幕 - 视频双语字幕插件 | 免费",
     "default_popup": "popup.html"
   },
-  "version": "0.5.91",
+  "version": "0.6.1",
   "author": "big cui <service@1zimu.com>",
   "name": "一字幕 - 视频双语字幕插件 | 免费",
   "description": "一款免费的支持多语种的双语的音频、视频字幕的语言学习辅助插件。可按单词，短语，整句翻译；支持(YouTube，bilibili, 百度网盘 等平台)；亦可支持本地外挂字幕和内嵌字幕。可变速、重复播放、跟读、画面遮挡。",
@@ -39,29 +39,6 @@
         "script.cd20f84b.js"
       ],
       "run_at": "document_start",
-      "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
-        "*://localhost/*",
-        "*://frp.1zimu.com/*",
-        "*://1zimu.com/*",
-        "*://www.1zimu.com/*",
-        "*://1zimu.com/player*",
-        "*://www.1zimu.com/player*",
-        "*://*.youtube.com/watch*",
-        "*://youtube.com/watch*",
-        "*://pan.baidu.com/pfile/video*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "js": [
-        "subtitle.5b4dee95.js"
-      ],
-      "run_at": "document_end",
       "all_frames": false,
       "css": []
     },
@@ -114,6 +91,29 @@
       "run_at": "document_end",
       "all_frames": false,
       "css": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://localhost/*",
+        "*://frp.1zimu.com/*",
+        "*://1zimu.com/*",
+        "*://www.1zimu.com/*",
+        "*://1zimu.com/player*",
+        "*://www.1zimu.com/player*",
+        "*://*.youtube.com/watch*",
+        "*://youtube.com/watch*",
+        "*://pan.baidu.com/pfile/video*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "js": [
+        "subtitle.5b4dee95.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "css": []
     }
   ],
   "default_locale": "zh_CN",
@@ -135,6 +135,23 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*",
         "*://localhost/*",
@@ -146,23 +163,6 @@
         "*://*.youtube.com/*",
         "*://youtube.com/*",
         "*://pan.baidu.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*"
       ],
