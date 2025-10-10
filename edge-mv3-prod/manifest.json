@@ -44,6 +44,17 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "DraggableTTSSubtitleList.c116c850.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*",
         "*://localhost/*",
@@ -67,10 +78,16 @@
     },
     {
       "matches": [
-        "<all_urls>"
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://pan.baidu.com/pfile/video*",
+        "*://*.youtube.com/watch*",
+        "*://youtube.com/watch*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
       ],
       "js": [
-        "DraggableTTSSubtitleList.c116c850.js"
+        "InlineSubtitleSwitchMix.946d0f59.js"
       ],
       "run_at": "document_end",
       "all_frames": false,
@@ -98,23 +115,6 @@
       "run_at": "document_end",
       "all_frames": false,
       "css": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
-        "*://pan.baidu.com/pfile/video*",
-        "*://*.youtube.com/watch*",
-        "*://youtube.com/watch*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "js": [
-        "InlineSubtitleSwitchMix.946d0f59.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false,
-      "css": []
     }
   ],
   "default_locale": "zh_CN",
@@ -136,24 +136,6 @@
     },
     {
       "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
-        "*://localhost/*",
-        "*://frp.1zimu.com/*",
-        "*://1zimu.com/*",
-        "*://www.1zimu.com/*",
-        "*://1zimu.com/*",
-        "*://www.1zimu.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*",
-        "*://pan.baidu.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
         "<all_urls>"
       ],
       "resources": []
@@ -183,6 +165,24 @@
         "*://pan.baidu.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://localhost/*",
+        "*://frp.1zimu.com/*",
+        "*://1zimu.com/*",
+        "*://www.1zimu.com/*",
+        "*://1zimu.com/*",
+        "*://www.1zimu.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*",
+        "*://pan.baidu.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*"
       ],
