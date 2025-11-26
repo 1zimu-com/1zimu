@@ -70,6 +70,17 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "DraggableTTSSubtitleList.c116c850.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*",
         "*://pan.baidu.com/pfile/video*",
@@ -102,18 +113,7 @@
         "*://youtube.com/*"
       ],
       "js": [
-        "InlineSubtitleMask.c008b216.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "DraggableTTSSubtitleList.c116c850.js"
+        "subtitle.5b4dee95.js"
       ],
       "run_at": "document_end",
       "all_frames": false,
@@ -136,7 +136,7 @@
         "*://youtube.com/*"
       ],
       "js": [
-        "subtitle.5b4dee95.js"
+        "InlineSubtitleMask.c008b216.js"
       ],
       "run_at": "document_end",
       "all_frames": false,
@@ -179,6 +179,12 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*",
         "*://pan.baidu.com/*",
@@ -204,12 +210,6 @@
         "*://pan.baidu.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "<all_urls>"
       ],
       "resources": []
     },
