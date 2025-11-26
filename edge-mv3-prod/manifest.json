@@ -83,23 +83,6 @@
       "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*",
-        "*://pan.baidu.com/pfile/video*",
-        "*://*.youtube.com/watch*",
-        "*://youtube.com/watch*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "js": [
-        "InlineSubtitleSwitchMix.946d0f59.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
         "*://localhost/*",
         "*://frp.1zimu.com/*",
         "*://1zimu.com/*",
@@ -114,6 +97,23 @@
       ],
       "js": [
         "InlineSubtitleMask.c008b216.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "css": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://pan.baidu.com/pfile/video*",
+        "*://*.youtube.com/watch*",
+        "*://youtube.com/watch*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "js": [
+        "InlineSubtitleSwitchMix.946d0f59.js"
       ],
       "run_at": "document_end",
       "all_frames": false,
@@ -187,18 +187,6 @@
       "matches": [
         "*://*.bilibili.com/*",
         "*://bilibili.com/*",
-        "*://pan.baidu.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*",
-        "*://*.youtube.com/*",
-        "*://youtube.com/*"
-      ],
-      "resources": []
-    },
-    {
-      "matches": [
-        "*://*.bilibili.com/*",
-        "*://bilibili.com/*",
         "*://localhost/*",
         "*://frp.1zimu.com/*",
         "*://1zimu.com/*",
@@ -208,6 +196,18 @@
         "*://*.youtube.com/*",
         "*://youtube.com/*",
         "*://pan.baidu.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "resources": []
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*",
+        "*://bilibili.com/*",
+        "*://pan.baidu.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.com/*",
         "*://*.youtube.com/*",
         "*://youtube.com/*"
       ],
