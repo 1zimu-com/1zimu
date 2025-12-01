@@ -40,17 +40,6 @@
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "script.cd20f84b.js"
-      ],
-      "run_at": "document_start",
-      "all_frames": false,
-      "css": []
-    },
-    {
-      "matches": [
         "https://chat.deepseek.com/*",
         "https://www.doubao.com/*",
         "https://www.kimi.com/*",
@@ -66,6 +55,17 @@
       ],
       "run_at": "document_end",
       "all_frames": true,
+      "css": []
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "script.cd20f84b.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false,
       "css": []
     },
     {
