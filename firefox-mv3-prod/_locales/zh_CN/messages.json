@@ -102,5 +102,9 @@
   "pleasePayItThenUse": {
     "message": "请开通会员后使用此功能",
     "description": "请开通会员后使用此功能"
+  },
+  "closeOpenComponentShortcut": {
+    "message": "关闭/打开此组件快捷键",
+    "description": "关闭/打开此组件快捷键"
   }
 }
